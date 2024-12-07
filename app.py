@@ -82,7 +82,7 @@ class NotesWindow(QtWidgets.QMainWindow):
         else:
             QtWidgets.QMessageBox.warning(self, "Помилка", "Замітка для додавання тега не обрана!")
 
-    def __del__(self):
+    def del_tag(self):
         if self.ui.listWidget_2.currentItem():
             key = self.ui.listWidget.currentItem().text()
             tag = self.ui.listWidget_2.currentItem().text()
